@@ -1,0 +1,35 @@
+depends_on: [test]
+
+when:
+  - event: tag
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+
+variables:
+  - &golang 'golang:1.21'
+
+steps:
+  publish-next:
+    image: woodpeckerci/plugin-docker-buildx:3.1.0
+    settings:
+      dockerfile: Dockerfile.multiarch
+      repo: woodpeckerci/plugin-extend-env
+      tags: next
+      platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le,windows/amd64,darwin/amd64,darwin/arm64,freebsd/arm64,freebsd/amd64,openbsd/arm64,openbsd/amd64
+      username: woodpeckerbot
+    secrets: [docker_password]
+    when:
+      branch: ${CI_REPO_DEFAULT_BRANCH}
+      event: push
+
+  publish-tag:
+    image: woodpeckerci/plugin-docker-buildx:3.1.0
+    settings:
+      dockerfile: Dockerfile.multiarch
+      repo: woodpeckerci/plugin-extend-env
+      tag: [latest, '${CI_COMMIT_TAG}']
+      platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le,windows/amd64,darwin/amd64,darwin/arm64,freebsd/arm64,freebsd/amd64,openbsd/arm64,openbsd/amd64
+      username: woodpeckerbot
+    secrets: [docker_password]
+    when:
+      event: tag
