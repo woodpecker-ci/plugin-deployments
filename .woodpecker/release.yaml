@@ -13,7 +13,7 @@ steps:
     image: woodpeckerci/plugin-docker-buildx:3.1.0
     settings:
       dockerfile: Dockerfile.multiarch
-      repo: woodpeckerci/plugin-extend-env
+      repo: woodpeckerci/plugin-deployments
       tags: next
       platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le,windows/amd64,darwin/amd64,darwin/arm64,freebsd/arm64,freebsd/amd64,openbsd/arm64,openbsd/amd64
       username: woodpeckerbot
@@ -26,7 +26,7 @@ steps:
     image: woodpeckerci/plugin-docker-buildx:3.1.0
     settings:
       dockerfile: Dockerfile.multiarch
-      repo: woodpeckerci/plugin-extend-env
+      repo: woodpeckerci/plugin-deployments
       tag: [latest, '${CI_COMMIT_TAG}']
       platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le,windows/amd64,darwin/amd64,darwin/arm64,freebsd/arm64,freebsd/amd64,openbsd/arm64,openbsd/amd64
       username: woodpeckerbot

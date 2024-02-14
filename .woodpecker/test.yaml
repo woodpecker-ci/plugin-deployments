@@ -24,6 +24,6 @@ steps:
     settings:
       dockerfile: Dockerfile.multiarch
       dry_run: true
-      repo: woodpeckerci/plugin-extend-env
+      repo: woodpeckerci/plugin-deployments
       tags: latest
       platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le,windows/amd64,darwin/amd64,darwin/arm64,freebsd/arm64,freebsd/amd64,openbsd/arm64,openbsd/amd64
