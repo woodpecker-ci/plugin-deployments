@@ -15,22 +15,13 @@ type Plugin struct {
 }
 
 func (p *Plugin) execute(ctx context.Context) error {
-	var _forge forge.Forge
-
-	token := "" // TODO
-
-	switch p.Metadata.Forge.Type {
-	case "gitlab":
-		var err error
-		_forge, err = forge.NewGitlab(p.Metadata.Forge.Link, token)
-		if err != nil {
-			return err
-		}
-	default:
-		return errors.New("unsupported forge type")
+	token := "" // TODO: get from plugin settings
+	_forge, err := forge.GetForge(p.Metadata.Forge, token)
+	if err != nil {
+		return err
 	}
 
-	action := "" // TODO
+	action := "" // TODO: get from plugin settings
 	if action == "" {
 		if p.Metadata.Pipeline.Event == "pull_request_closed" {
 			action = "delete"
@@ -39,12 +30,12 @@ func (p *Plugin) execute(ctx context.Context) error {
 		}
 	}
 
-	deploymentURL := "" // TODO
+	deploymentURL := "" // TODO: get from plugin settings
 	if deploymentURL == "" {
 		return errors.New("deployment url is required")
 	}
 
-	deploymentName := "" // TODO
+	deploymentName := "" // TODO: get from plugin settings
 	if deploymentName == "" {
 		if p.Metadata.Pipeline.Event == "pull_request" || p.Metadata.Pipeline.Event == "pull_request_closed" {
 			deploymentName = fmt.Sprintf("pr-%s", p.Metadata.Curr.PullRequest)
@@ -59,13 +50,13 @@ func (p *Plugin) execute(ctx context.Context) error {
 
 	switch action {
 	case "create":
-		err := _forge.CreateEnvironment(ctx, p.Metadata.Repository, deploymentURL, deploymentName)
+		err := _forge.CreateDeployment(ctx, p.Metadata.Repository, deploymentURL, deploymentName, &p.Metadata.Curr)
 		if err != nil {
 			return err
 		}
 
 	case "delete":
-		err := _forge.RemoveEnvironment(ctx, p.Metadata.Repository, deploymentURL, deploymentName)
+		err := _forge.RemoveDeployment(ctx, p.Metadata.Repository, deploymentName)
 		if err != nil {
 			return err
 		}
