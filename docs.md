@@ -21,8 +21,15 @@ steps:
     settings:
       url: https://may-review-environment.example.com
       # action: create # This option is normally not necessary as its auto-detected by the pipeline event
-      # forge_url: https://gitlab.com
-      # forge_type: gitlab
-      # forge_username: ignored
-      # forge_password: personal-api-token
+      forge_token:
+        from_secrets: github_token
 ```
+
+## Settings
+
+| Settings      | Default                                                                       | Description                         |
+| ------------- | ----------------------------------------------------------------------------- | ----------------------------------- |
+| `ACTION`      | `create` for all pipeline events apart from `pull_request_closed` => `delete` | `create` or `delete` a deployment   |
+| `NAME`        | pull-requests: `pr-{pr-number}`, tag: `{tag-name}`, push: `{branch}           | The name of your deployment         |
+| `URL`         | _none_                                                                        | The url to the deployed environment |
+| `FORGE_TOKEN` | _none_                                                                        | A token to access the forges api    |
