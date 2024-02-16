@@ -6,6 +6,7 @@ import (
 	"fmt"
 
 	"codeberg.org/woodpecker-plugins/go-plugin"
+	"github.com/rs/zerolog/log"
 
 	"github.com/woodpecker-ci/plugin-deployments/forge"
 )
@@ -60,12 +61,15 @@ func (p *Plugin) execute(ctx context.Context) error {
 		if err != nil {
 			return err
 		}
+		log.Info().Msgf("Deployment created: %s (%s)", deploymentName, deploymentURL)
 
 	case "delete":
 		err := _forge.RemoveDeployment(ctx, p.Metadata.Repository, deploymentName)
 		if err != nil {
 			return err
 		}
+		log.Info().Msgf("Deployment removed: %s", deploymentName)
+
 	default:
 		return errors.New("invalid action")
 	}
