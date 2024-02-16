@@ -12,30 +12,27 @@ import (
 
 type Plugin struct {
 	*plugin.Plugin
+	settings struct {
+		url        string
+		name       string
+		action     string
+		forgeToken string
+	}
 }
 
 func (p *Plugin) execute(ctx context.Context) error {
-	token := "" // TODO: get from plugin settings
+	token := p.settings.forgeToken
 	_forge, err := forge.GetForge(p.Metadata.Forge, token)
 	if err != nil {
 		return err
 	}
 
-	action := "" // TODO: get from plugin settings
-	if action == "" {
-		if p.Metadata.Pipeline.Event == "pull_request_closed" {
-			action = "delete"
-		} else {
-			action = "create"
-		}
-	}
-
-	deploymentURL := "" // TODO: get from plugin settings
+	deploymentURL := p.settings.url
 	if deploymentURL == "" {
 		return errors.New("deployment url is required")
 	}
 
-	deploymentName := "" // TODO: get from plugin settings
+	deploymentName := p.settings.name
 	if deploymentName == "" {
 		if p.Metadata.Pipeline.Event == "pull_request" || p.Metadata.Pipeline.Event == "pull_request_closed" {
 			deploymentName = fmt.Sprintf("pr-%s", p.Metadata.Curr.PullRequest)
@@ -45,6 +42,15 @@ func (p *Plugin) execute(ctx context.Context) error {
 			deploymentName = p.Metadata.Curr.Branch
 		} else {
 			return errors.New("please set a deployment name")
+		}
+	}
+
+	action := p.settings.action
+	if action == "" {
+		if p.Metadata.Pipeline.Event == "pull_request_closed" {
+			action = "delete"
+		} else {
+			action = "create"
 		}
 	}
 
