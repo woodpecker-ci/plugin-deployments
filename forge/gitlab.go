@@ -90,11 +90,29 @@ func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 			return err
 		}
 
-		_, _, err = g.Notes.CreateMergeRequestNote(repoID, mergeRequestID, &gitlab.CreateMergeRequestNoteOptions{
-			Body: gitlab.Ptr(fmt.Sprintf("Preview deployed to: %s", url)),
-		}, gitlab.WithContext(ctx))
+		notes, _, err := g.Notes.ListMergeRequestNotes(repoID, mergeRequestID, &gitlab.ListMergeRequestNotesOptions{}, gitlab.WithContext(ctx))
 		if err != nil {
 			return err
+		}
+
+		for _, note := range notes {
+			if note.Body == fmt.Sprintf("Preview deployed to: %s", url) {
+				_, _, err = g.Notes.UpdateMergeRequestNote(repoID, mergeRequestID, note.ID, &gitlab.UpdateMergeRequestNoteOptions{
+					Body: gitlab.Ptr(fmt.Sprintf("Preview deployed to: %s", url)),
+				}, gitlab.WithContext(ctx))
+				if err != nil {
+					return err
+				}
+			}
+		}
+
+		if len(notes) == 0 {
+			_, _, err = g.Notes.CreateMergeRequestNote(repoID, mergeRequestID, &gitlab.CreateMergeRequestNoteOptions{
+				Body: gitlab.Ptr(fmt.Sprintf("Preview deployed to: %s", url)),
+			}, gitlab.WithContext(ctx))
+			if err != nil {
+				return err
+			}
 		}
 	}
 
