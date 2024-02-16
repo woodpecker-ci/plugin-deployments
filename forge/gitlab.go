@@ -3,6 +3,7 @@ package forge
 import (
 	"context"
 	"fmt"
+	"strconv"
 
 	"codeberg.org/woodpecker-plugins/go-plugin"
 	"github.com/xanzy/go-gitlab"
@@ -46,7 +47,7 @@ func (g *Gitlab) getEnvironment(ctx context.Context, repoID int, name string) (*
 	return nil, nil
 }
 
-func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, name, url string, commit *plugin.Commit) error {
+func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, name, url string, metadata *plugin.Metadata) error {
 	repoID, err := g.getRepo(ctx, repo)
 	if err != nil {
 		return err
@@ -74,6 +75,7 @@ func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 		}
 	}
 
+	commit := metadata.Curr
 	_, _, err = g.Deployments.CreateProjectDeployment(repoID, &gitlab.CreateProjectDeploymentOptions{
 		Environment: gitlab.Ptr(name),
 		Tag:         gitlab.Ptr(commit.Tag != ""),
@@ -81,6 +83,20 @@ func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 		Ref:         gitlab.Ptr(commit.Ref),
 		Status:      gitlab.Ptr(gitlab.DeploymentStatusValue("success")),
 	}, gitlab.WithContext(ctx))
+
+	if metadata.Pipeline.Event == "pull_request" {
+		mergeRequestID, err := strconv.Atoi(metadata.Curr.PullRequest)
+		if err != nil {
+			return err
+		}
+
+		_, _, err = g.Notes.CreateMergeRequestNote(repoID, mergeRequestID, &gitlab.CreateMergeRequestNoteOptions{
+			Body: gitlab.Ptr(fmt.Sprintf("Preview deployed to: %s", url)),
+		}, gitlab.WithContext(ctx))
+		if err != nil {
+			return err
+		}
+	}
 
 	return err
 }

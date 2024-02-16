@@ -53,7 +53,7 @@ func (g *Github) getEnvironment(ctx context.Context, repo plugin.Repository, nam
 	return nil, nil
 }
 
-func (g *Github) CreateDeployment(ctx context.Context, repo plugin.Repository, name, url string, commit *plugin.Commit) error {
+func (g *Github) CreateDeployment(ctx context.Context, repo plugin.Repository, name, url string, metadata *plugin.Metadata) error {
 	environment, err := g.getEnvironment(ctx, repo, name)
 	if err != nil {
 		return err
@@ -73,7 +73,7 @@ func (g *Github) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 
 	if deployment == nil {
 		deployment, _, err = g.Repositories.CreateDeployment(ctx, repo.Owner, repo.Name, &github.DeploymentRequest{
-			Ref:              github.String(commit.Ref),
+			Ref:              github.String(metadata.Curr.Ref),
 			Environment:      github.String(name),
 			Description:      github.String("Deployment created by woodpecker"),
 			RequiredContexts: &[]string{}, // empty array to skip checks
@@ -88,7 +88,7 @@ func (g *Github) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 		EnvironmentURL: github.String(url),
 		State:          github.String("success"),
 		AutoInactive:   github.Bool(true),
-		// LogURL:         github.String(url), // TODO: use woodpecker step log url
+		LogURL:         github.String(metadata.Pipeline.Link),
 	})
 
 	return err

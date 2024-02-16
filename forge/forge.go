@@ -8,7 +8,7 @@ import (
 )
 
 type Forge interface {
-	CreateDeployment(ctx context.Context, repo plugin.Repository, name, url string, commit *plugin.Commit) error
+	CreateDeployment(ctx context.Context, repo plugin.Repository, name, url string, metadata *plugin.Metadata) error
 	RemoveDeployment(ctx context.Context, repo plugin.Repository, name string) error
 }
 

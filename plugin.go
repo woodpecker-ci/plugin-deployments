@@ -57,7 +57,7 @@ func (p *Plugin) execute(ctx context.Context) error {
 
 	switch action {
 	case "create":
-		err := _forge.CreateDeployment(ctx, p.Metadata.Repository, deploymentName, deploymentURL, &p.Metadata.Curr)
+		err := _forge.CreateDeployment(ctx, p.Metadata.Repository, deploymentName, deploymentURL, &p.Metadata)
 		if err != nil {
 			return err
 		}
