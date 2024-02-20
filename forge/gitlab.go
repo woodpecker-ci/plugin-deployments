@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"strconv"
+	"strings"
 
 	"codeberg.org/woodpecker-plugins/go-plugin"
 	"github.com/xanzy/go-gitlab"
@@ -90,25 +91,21 @@ func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 			return err
 		}
 
-		notes, _, err := g.Notes.ListMergeRequestNotes(repoID, mergeRequestID, &gitlab.ListMergeRequestNotesOptions{}, gitlab.WithContext(ctx))
+		note, err := g.getComment(repoID, mergeRequestID)
 		if err != nil {
 			return err
 		}
 
-		for _, note := range notes {
-			if note.Body == fmt.Sprintf("Preview deployed to: %s", url) {
-				_, _, err = g.Notes.UpdateMergeRequestNote(repoID, mergeRequestID, note.ID, &gitlab.UpdateMergeRequestNoteOptions{
-					Body: gitlab.Ptr(fmt.Sprintf("Preview deployed to: %s", url)),
-				}, gitlab.WithContext(ctx))
-				if err != nil {
-					return err
-				}
-			}
-		}
-
-		if len(notes) == 0 {
+		if note == nil {
 			_, _, err = g.Notes.CreateMergeRequestNote(repoID, mergeRequestID, &gitlab.CreateMergeRequestNoteOptions{
-				Body: gitlab.Ptr(fmt.Sprintf("Preview deployed to: %s", url)),
+				Body: gitlab.Ptr(fmt.Sprintf("🚀 Preview deployed to: %s", url)),
+			}, gitlab.WithContext(ctx))
+			if err != nil {
+				return err
+			}
+		} else {
+			_, _, err = g.Notes.UpdateMergeRequestNote(repoID, mergeRequestID, note.ID, &gitlab.UpdateMergeRequestNoteOptions{
+				Body: gitlab.Ptr(fmt.Sprintf("🚀 Preview deployed to: %s", url)),
 			}, gitlab.WithContext(ctx))
 			if err != nil {
 				return err
@@ -152,4 +149,33 @@ func (g *Gitlab) RemoveDeployment(ctx context.Context, repo plugin.Repository, n
 	}
 
 	return nil
+}
+
+func (g *Gitlab) getComment(projectID, mergeRequestID int) (*gitlab.Note, error) {
+	listMergeRequestNotesOptions := &gitlab.ListMergeRequestNotesOptions{
+		Sort: gitlab.Ptr("asc"),
+	}
+
+	for {
+		notes, resp, err := g.Client.Notes.ListMergeRequestNotes(projectID, mergeRequestID, listMergeRequestNotesOptions)
+		if err != nil {
+			return nil, err
+		}
+
+		for _, note := range notes {
+			if strings.Contains(note.Body, "Preview deployed to:") {
+				return note, nil
+			}
+		}
+
+		// Exit the loop when we've seen all pages
+		if resp.CurrentPage >= resp.TotalPages {
+			break
+		}
+
+		// Update the page number to get the next page
+		listMergeRequestNotesOptions.Page = resp.NextPage
+	}
+
+	return nil, nil
 }

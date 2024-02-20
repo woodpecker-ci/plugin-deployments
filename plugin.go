@@ -61,14 +61,14 @@ func (p *Plugin) execute(ctx context.Context) error {
 		if err != nil {
 			return err
 		}
-		log.Info().Msgf("Deployment created: %s (%s)", deploymentName, deploymentURL)
+		log.Info().Msgf("🚀 Deployment created: %s (%s)", deploymentName, deploymentURL)
 
 	case "delete":
 		err := _forge.RemoveDeployment(ctx, p.Metadata.Repository, deploymentName)
 		if err != nil {
 			return err
 		}
-		log.Info().Msgf("Deployment removed: %s", deploymentName)
+		log.Info().Msgf("🛌🏽 Deployment removed: %s", deploymentName)
 
 	default:
 		return errors.New("invalid action")

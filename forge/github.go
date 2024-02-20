@@ -75,7 +75,7 @@ func (g *Github) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 		deployment, _, err = g.Repositories.CreateDeployment(ctx, repo.Owner, repo.Name, &github.DeploymentRequest{
 			Ref:              github.String(metadata.Curr.Ref),
 			Environment:      github.String(name),
-			Description:      github.String("Deployment created by woodpecker"),
+			Description:      github.String("🚀 Deployment created by woodpecker"),
 			RequiredContexts: &[]string{}, // empty array to skip checks
 		})
 		if err != nil {
