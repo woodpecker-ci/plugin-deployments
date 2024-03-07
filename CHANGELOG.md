@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - Update golang deps non-major [[#7](https://github.com/woodpecker-ci/plugin-deployments/pull/7)]
