@@ -3,11 +3,11 @@ module github.com/woodpecker-ci/plugin-deployments
 go 1.21
 
 require (
-	codeberg.org/woodpecker-plugins/go-plugin v0.3.1
+	codeberg.org/woodpecker-plugins/go-plugin v0.4.0
 	github.com/google/go-github/v60 v60.0.0
 	github.com/rs/zerolog v1.32.0
 	github.com/urfave/cli/v2 v2.27.1
-	github.com/xanzy/go-gitlab v0.99.0
+	github.com/xanzy/go-gitlab v0.100.0
 	golang.org/x/oauth2 v0.18.0
 )
 
