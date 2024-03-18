@@ -1,11 +1,14 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-03-13
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-03-18
 
 ### ❤️ Thanks to all contributors! ❤️
 
+
+
 ### Misc
 
+- Update woodpeckerci/plugin-docker-buildx Docker tag to v3.2.0 [[#9](https://github.com/woodpecker-ci/plugin-deployments/pull/9)]
 - Update golang deps non-major [[#8](https://github.com/woodpecker-ci/plugin-deployments/pull/8)]
 - Update golang deps non-major [[#7](https://github.com/woodpecker-ci/plugin-deployments/pull/7)]
 - Update module github.com/google/go-github/v59 to v60 [[#6](https://github.com/woodpecker-ci/plugin-deployments/pull/6)]
