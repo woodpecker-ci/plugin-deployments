@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v3.2.0 [[#9](https://github.com/woodpecker-ci/plugin-deployments/pull/9)]
