@@ -1,8 +1,10 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-03-18
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-03-21
 
 ### ❤️ Thanks to all contributors! ❤️
+
+
 
 ### Misc
 
