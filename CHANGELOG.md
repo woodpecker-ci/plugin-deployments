@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - Update module github.com/xanzy/go-gitlab to v0.101.0 [[#11](https://github.com/woodpecker-ci/plugin-deployments/pull/11)]
