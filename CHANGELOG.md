@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - Update pre-commit hook golangci/golangci-lint to v1.57.2 [[#12](https://github.com/woodpecker-ci/plugin-deployments/pull/12)]
