@@ -1,11 +1,14 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-03-31
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-04-02
 
 ### ❤️ Thanks to all contributors! ❤️
 
+
+
 ### Misc
 
+- Update module codeberg.org/woodpecker-plugins/go-plugin to v0.4.1 [[#15](https://github.com/woodpecker-ci/plugin-deployments/pull/15)]
 - Update pre-commit hook golangci/golangci-lint to v1.57.2 [[#12](https://github.com/woodpecker-ci/plugin-deployments/pull/12)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v3.2.1 [[#13](https://github.com/woodpecker-ci/plugin-deployments/pull/13)]
 - Update module github.com/xanzy/go-gitlab to v0.101.0 [[#11](https://github.com/woodpecker-ci/plugin-deployments/pull/11)]
