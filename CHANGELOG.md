@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - Update module codeberg.org/woodpecker-plugins/go-plugin to v0.4.1 [[#15](https://github.com/woodpecker-ci/plugin-deployments/pull/15)]
