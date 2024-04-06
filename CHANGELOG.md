@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - Update module github.com/google/go-github/v60 to v61 [[#16](https://github.com/woodpecker-ci/plugin-deployments/pull/16)]
