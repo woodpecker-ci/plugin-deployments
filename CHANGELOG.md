@@ -1,11 +1,15 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-04-06
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-04-08
 
 ### ❤️ Thanks to all contributors! ❤️
 
+
+
 ### Misc
 
+- Update golang deps non-major [[#17](https://github.com/woodpecker-ci/plugin-deployments/pull/17)]
+- Update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 [[#18](https://github.com/woodpecker-ci/plugin-deployments/pull/18)]
 - Update module github.com/google/go-github/v60 to v61 [[#16](https://github.com/woodpecker-ci/plugin-deployments/pull/16)]
 - Update module codeberg.org/woodpecker-plugins/go-plugin to v0.4.1 [[#15](https://github.com/woodpecker-ci/plugin-deployments/pull/15)]
 - Update pre-commit hook golangci/golangci-lint to v1.57.2 [[#12](https://github.com/woodpecker-ci/plugin-deployments/pull/12)]
