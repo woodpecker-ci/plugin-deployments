@@ -1,11 +1,10 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-04-21
-
-### ❤️ Thanks to all contributors! ❤️
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-04-23
 
 ### Misc
 
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v1.1.1 [[#20](https://github.com/woodpecker-ci/plugin-deployments/pull/20)]
 - Update module github.com/xanzy/go-gitlab to v0.103.0 [[#19](https://github.com/woodpecker-ci/plugin-deployments/pull/19)]
 - Update golang deps non-major [[#17](https://github.com/woodpecker-ci/plugin-deployments/pull/17)]
 - Update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 [[#18](https://github.com/woodpecker-ci/plugin-deployments/pull/18)]
