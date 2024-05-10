@@ -1,9 +1,10 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-05-07
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-05-10
 
 ### Misc
 
+- Update module github.com/xanzy/go-gitlab to v0.104.1 [[#24](https://github.com/woodpecker-ci/plugin-deployments/pull/24)]
 - Update golang deps non-major [[#23](https://github.com/woodpecker-ci/plugin-deployments/pull/23)]
 - Update module github.com/urfave/cli/v2 to v2.27.2 [[#21](https://github.com/woodpecker-ci/plugin-deployments/pull/21)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v1.1.1 [[#20](https://github.com/woodpecker-ci/plugin-deployments/pull/20)]
