@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	codeberg.org/woodpecker-plugins/go-plugin v0.4.1
-	github.com/google/go-github/v61 v61.0.0
+	github.com/google/go-github/v62 v62.0.0
 	github.com/rs/zerolog v1.32.0
 	github.com/urfave/cli/v2 v2.27.2
 	github.com/xanzy/go-gitlab v0.104.1
