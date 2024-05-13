@@ -2,8 +2,13 @@
 
 ## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-05-13
 
+### ❤️ Thanks to all contributors! ❤️
+
+@qwerty287
+
 ### Misc
 
+- Add CODEOWNERS [[#28](https://github.com/woodpecker-ci/plugin-deployments/pull/28)]
 - Update module github.com/xanzy/go-gitlab to v0.105.0 [[#27](https://github.com/woodpecker-ci/plugin-deployments/pull/27)]
 - Update pre-commit non-major [[#22](https://github.com/woodpecker-ci/plugin-deployments/pull/22)]
 - Update module github.com/google/go-github/v61 to v62 [[#25](https://github.com/woodpecker-ci/plugin-deployments/pull/25)]
