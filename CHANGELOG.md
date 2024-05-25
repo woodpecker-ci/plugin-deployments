@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-05-23
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-05-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### Misc
 
+- Update module github.com/rs/zerolog to v1.33.0 [[#30](https://github.com/woodpecker-ci/plugin-deployments/pull/30)]
 - Update pre-commit hook golangci/golangci-lint to v1.58.2 [[#29](https://github.com/woodpecker-ci/plugin-deployments/pull/29)]
 - Add CODEOWNERS [[#28](https://github.com/woodpecker-ci/plugin-deployments/pull/28)]
 - Update module github.com/xanzy/go-gitlab to v0.105.0 [[#27](https://github.com/woodpecker-ci/plugin-deployments/pull/27)]
