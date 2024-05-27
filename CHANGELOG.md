@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-05-25
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-05-27
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### Misc
 
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v1.1.2 [[#31](https://github.com/woodpecker-ci/plugin-deployments/pull/31)]
 - Update module github.com/rs/zerolog to v1.33.0 [[#30](https://github.com/woodpecker-ci/plugin-deployments/pull/30)]
 - Update pre-commit hook golangci/golangci-lint to v1.58.2 [[#29](https://github.com/woodpecker-ci/plugin-deployments/pull/29)]
 - Add CODEOWNERS [[#28](https://github.com/woodpecker-ci/plugin-deployments/pull/28)]
