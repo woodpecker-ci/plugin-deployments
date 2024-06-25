@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-06-11
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-06-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### Misc
 
+- Update golang deps non-major [[#33](https://github.com/woodpecker-ci/plugin-deployments/pull/33)]
 - Update pre-commit hook golangci/golangci-lint to v1.59.1 [[#34](https://github.com/woodpecker-ci/plugin-deployments/pull/34)]
 - Update pre-commit non-major [[#32](https://github.com/woodpecker-ci/plugin-deployments/pull/32)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v1.1.2 [[#31](https://github.com/woodpecker-ci/plugin-deployments/pull/31)]
