@@ -1,6 +1,6 @@
 steps:
   release-helper:
-    image: woodpeckerci/plugin-ready-release-go:1.2.0
+    image: woodpeckerci/plugin-ready-release-go:2.0.0
     settings:
       git_email: woodpecker-bot@obermui.de
       github_token:
