@@ -128,7 +128,12 @@ func (g *Gitlab) RemoveDeployment(ctx context.Context, repo plugin.Repository, n
 	}
 
 	if env != nil {
-		_, err := g.Environments.DeleteEnvironment(repoID, env.ID, gitlab.WithContext(ctx))
+		env, _, err := g.Environments.StopEnvironment(repoID, env.ID, nil, gitlab.WithContext(ctx))
+		if err != nil {
+			return err
+		}
+
+		_, err = g.Environments.DeleteEnvironment(repoID, env.ID, gitlab.WithContext(ctx))
 		if err != nil {
 			return err
 		}
