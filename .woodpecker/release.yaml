@@ -6,7 +6,7 @@ when:
     branch: ${CI_REPO_DEFAULT_BRANCH}
 
 variables:
-  - &golang 'golang:1.21'
+  - &golang 'golang:1.23'
 
 steps:
   publish-next:
