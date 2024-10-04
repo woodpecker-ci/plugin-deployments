@@ -2,7 +2,7 @@ package main
 
 import (
 	"codeberg.org/woodpecker-plugins/go-plugin"
-	"github.com/urfave/cli/v2"
+	"github.com/urfave/cli/v3"
 )
 
 func main() {
@@ -16,25 +16,25 @@ func main() {
 			&cli.StringFlag{
 				Name:        "url",
 				Usage:       "The URL of the deployment",
-				EnvVars:     []string{"PLUGIN_URL"},
+				Sources:     cli.EnvVars("PLUGIN_URL"),
 				Destination: &p.settings.url,
 			},
 			&cli.StringFlag{
 				Name:        "name",
 				Usage:       "The name of the deployment",
-				EnvVars:     []string{"PLUGIN_NAME"},
+				Sources:     cli.EnvVars("PLUGIN_NAME"),
 				Destination: &p.settings.name,
 			},
 			&cli.StringFlag{
 				Name:        "action",
 				Usage:       "Should we create or delete the deployment?",
-				EnvVars:     []string{"PLUGIN_ACTION"},
+				Sources:     cli.EnvVars("PLUGIN_ACTION"),
 				Destination: &p.settings.action,
 			},
 			&cli.StringFlag{
 				Name:        "forge-token",
 				Usage:       "The token to authenticate with your forge",
-				EnvVars:     []string{"PLUGIN_FORGE_TOKEN"},
+				Sources:     cli.EnvVars("PLUGIN_FORGE_TOKEN"),
 				Destination: &p.settings.forgeToken,
 			},
 		},
