@@ -1,27 +1,34 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-07-21
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-10-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@qwerty287
+@lukashass, @qwerty287
 
-### Misc
+### 🐛 Bug Fixes
 
-- [pre-commit.ci] pre-commit autoupdate [[#35](https://github.com/woodpecker-ci/plugin-deployments/pull/35)]
+- Stop gitlab environment before deleting it [[#50](https://github.com/woodpecker-ci/plugin-deployments/pull/50)]
+
+### 📦️ Dependency
+
+- Update pre-commit non-major [[#45](https://github.com/woodpecker-ci/plugin-deployments/pull/45)]
+- Update module github.com/urfave/cli/v2 to v2.27.4 [[#43](https://github.com/woodpecker-ci/plugin-deployments/pull/43)]
+- Update module golang.org/x/oauth2 to v0.22.0 [[#42](https://github.com/woodpecker-ci/plugin-deployments/pull/42)]
+- Update golang deps non-major [[#41](https://github.com/woodpecker-ci/plugin-deployments/pull/41)]
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v1.2.0 [[#40](https://github.com/woodpecker-ci/plugin-deployments/pull/40)]
+- Update woodpeckerci/plugin-docker-buildx Docker tag to v4.2.0 [[#39](https://github.com/woodpecker-ci/plugin-deployments/pull/39)]
 - Update module github.com/google/go-github/v62 to v63 [[#36](https://github.com/woodpecker-ci/plugin-deployments/pull/36)]
 - Update module github.com/google/go-github/v62 to v63 [[#36](https://github.com/woodpecker-ci/plugin-deployments/pull/36)]
 - Update golang deps non-major [[#38](https://github.com/woodpecker-ci/plugin-deployments/pull/38)]
 - Update golang deps non-major [[#38](https://github.com/woodpecker-ci/plugin-deployments/pull/38)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v4.1.0 [[#37](https://github.com/woodpecker-ci/plugin-deployments/pull/37)]
-- [pre-commit.ci] pre-commit autoupdate [[#35](https://github.com/woodpecker-ci/plugin-deployments/pull/35)]
 - Update golang deps non-major [[#33](https://github.com/woodpecker-ci/plugin-deployments/pull/33)]
 - Update pre-commit hook golangci/golangci-lint to v1.59.1 [[#34](https://github.com/woodpecker-ci/plugin-deployments/pull/34)]
 - Update pre-commit non-major [[#32](https://github.com/woodpecker-ci/plugin-deployments/pull/32)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v1.1.2 [[#31](https://github.com/woodpecker-ci/plugin-deployments/pull/31)]
 - Update module github.com/rs/zerolog to v1.33.0 [[#30](https://github.com/woodpecker-ci/plugin-deployments/pull/30)]
 - Update pre-commit hook golangci/golangci-lint to v1.58.2 [[#29](https://github.com/woodpecker-ci/plugin-deployments/pull/29)]
-- Add CODEOWNERS [[#28](https://github.com/woodpecker-ci/plugin-deployments/pull/28)]
 - Update module github.com/xanzy/go-gitlab to v0.105.0 [[#27](https://github.com/woodpecker-ci/plugin-deployments/pull/27)]
 - Update pre-commit non-major [[#22](https://github.com/woodpecker-ci/plugin-deployments/pull/22)]
 - Update module github.com/google/go-github/v61 to v62 [[#25](https://github.com/woodpecker-ci/plugin-deployments/pull/25)]
@@ -46,3 +53,11 @@
 - Update module github.com/xanzy/go-gitlab to v0.98.0 [[#4](https://github.com/woodpecker-ci/plugin-deployments/pull/4)]
 - Update golang deps non-major [[#3](https://github.com/woodpecker-ci/plugin-deployments/pull/3)]
 - Update module github.com/google/go-github/v57 to v59 [[#2](https://github.com/woodpecker-ci/plugin-deployments/pull/2)]
+
+### Misc
+
+- Use from_secret instead of secrets [[#52](https://github.com/woodpecker-ci/plugin-deployments/pull/52)]
+- Update dependencies [[#51](https://github.com/woodpecker-ci/plugin-deployments/pull/51)]
+- [pre-commit.ci] pre-commit autoupdate [[#35](https://github.com/woodpecker-ci/plugin-deployments/pull/35)]
+- [pre-commit.ci] pre-commit autoupdate [[#35](https://github.com/woodpecker-ci/plugin-deployments/pull/35)]
+- Add CODEOWNERS [[#28](https://github.com/woodpecker-ci/plugin-deployments/pull/28)]
