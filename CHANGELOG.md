@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/google/go-github/v63 to v65 [[#48](https://github.com/woodpecker-ci/plugin-deployments/pull/48)]
 - Update pre-commit non-major [[#45](https://github.com/woodpecker-ci/plugin-deployments/pull/45)]
 - Update module github.com/urfave/cli/v2 to v2.27.4 [[#43](https://github.com/woodpecker-ci/plugin-deployments/pull/43)]
 - Update module golang.org/x/oauth2 to v0.22.0 [[#42](https://github.com/woodpecker-ci/plugin-deployments/pull/42)]
