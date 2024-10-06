@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-10-05
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-10-06
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/xanzy/go-gitlab to v0.110.0 [[#47](https://github.com/woodpecker-ci/plugin-deployments/pull/47)]
 - Update module github.com/google/go-github/v63 to v65 [[#48](https://github.com/woodpecker-ci/plugin-deployments/pull/48)]
 - Update pre-commit non-major [[#45](https://github.com/woodpecker-ci/plugin-deployments/pull/45)]
 - Update module github.com/urfave/cli/v2 to v2.27.4 [[#43](https://github.com/woodpecker-ci/plugin-deployments/pull/43)]
