@@ -5,7 +5,7 @@ import (
 	"net/url"
 
 	"codeberg.org/woodpecker-plugins/go-plugin"
-	"github.com/google/go-github/v65/github"
+	"github.com/google/go-github/v66/github"
 	"golang.org/x/oauth2"
 )
 
