@@ -59,6 +59,7 @@
 
 ### Misc
 
+- Remove deployment deletion [[#58](https://github.com/woodpecker-ci/plugin-deployments/pull/58)]
 - Use from_secret instead of secrets [[#52](https://github.com/woodpecker-ci/plugin-deployments/pull/52)]
 - Update dependencies [[#51](https://github.com/woodpecker-ci/plugin-deployments/pull/51)]
 - [pre-commit.ci] pre-commit autoupdate [[#35](https://github.com/woodpecker-ci/plugin-deployments/pull/35)]
