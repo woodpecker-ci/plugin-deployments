@@ -145,11 +145,11 @@ func (g *Gitlab) RemoveDeployment(ctx context.Context, repo plugin.Repository, n
 			return err
 		}
 
-		// TODO: delete all deployments
-		deployment := deployments[0]
-		_, err = g.Deployments.DeleteProjectDeployment(repoID, deployment.ID, gitlab.WithContext(ctx))
-		if err != nil {
-			return err
+		for _, deployment := range deployments {
+			_, err = g.Deployments.DeleteProjectDeployment(repoID, deployment.ID, gitlab.WithContext(ctx))
+			if err != nil {
+				return err
+			}
 		}
 	}
 
