@@ -12,6 +12,9 @@
 
 ### 📦️ Dependency
 
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v2.1.1 [[#61](https://github.com/woodpecker-ci/plugin-deployments/pull/61)]
+- Update pre-commit non-major [[#62](https://github.com/woodpecker-ci/plugin-deployments/pull/62)]
+- Update golang deps non-major [[#60](https://github.com/woodpecker-ci/plugin-deployments/pull/60)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v5 [[#59](https://github.com/woodpecker-ci/plugin-deployments/pull/59)]
 - Update github.com/urfave/cli/v3 digest to 20ef97b [[#56](https://github.com/woodpecker-ci/plugin-deployments/pull/56)]
 - Update module github.com/xanzy/go-gitlab to v0.110.0 [[#47](https://github.com/woodpecker-ci/plugin-deployments/pull/47)]
@@ -23,8 +26,6 @@
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v1.2.0 [[#40](https://github.com/woodpecker-ci/plugin-deployments/pull/40)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v4.2.0 [[#39](https://github.com/woodpecker-ci/plugin-deployments/pull/39)]
 - Update module github.com/google/go-github/v62 to v63 [[#36](https://github.com/woodpecker-ci/plugin-deployments/pull/36)]
-- Update module github.com/google/go-github/v62 to v63 [[#36](https://github.com/woodpecker-ci/plugin-deployments/pull/36)]
-- Update golang deps non-major [[#38](https://github.com/woodpecker-ci/plugin-deployments/pull/38)]
 - Update golang deps non-major [[#38](https://github.com/woodpecker-ci/plugin-deployments/pull/38)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v4.1.0 [[#37](https://github.com/woodpecker-ci/plugin-deployments/pull/37)]
 - Update golang deps non-major [[#33](https://github.com/woodpecker-ci/plugin-deployments/pull/33)]
@@ -63,6 +64,5 @@
 - Remove deployment deletion [[#58](https://github.com/woodpecker-ci/plugin-deployments/pull/58)]
 - Use from_secret instead of secrets [[#52](https://github.com/woodpecker-ci/plugin-deployments/pull/52)]
 - Update dependencies [[#51](https://github.com/woodpecker-ci/plugin-deployments/pull/51)]
-- [pre-commit.ci] pre-commit autoupdate [[#35](https://github.com/woodpecker-ci/plugin-deployments/pull/35)]
 - [pre-commit.ci] pre-commit autoupdate [[#35](https://github.com/woodpecker-ci/plugin-deployments/pull/35)]
 - Add CODEOWNERS [[#28](https://github.com/woodpecker-ci/plugin-deployments/pull/28)]
