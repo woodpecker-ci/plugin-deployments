@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-10-08
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-12-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update woodpeckerci/plugin-docker-buildx Docker tag to v5 [[#59](https://github.com/woodpecker-ci/plugin-deployments/pull/59)]
 - Update github.com/urfave/cli/v3 digest to 20ef97b [[#56](https://github.com/woodpecker-ci/plugin-deployments/pull/56)]
 - Update module github.com/xanzy/go-gitlab to v0.110.0 [[#47](https://github.com/woodpecker-ci/plugin-deployments/pull/47)]
 - Update module github.com/google/go-github/v63 to v65 [[#48](https://github.com/woodpecker-ci/plugin-deployments/pull/48)]
