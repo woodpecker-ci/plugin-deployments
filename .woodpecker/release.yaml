@@ -10,7 +10,7 @@ variables:
 
 steps:
   publish-next:
-    image: woodpeckerci/plugin-docker-buildx:5.0.0
+    image: woodpeckerci/plugin-docker-buildx:5.1.0
     settings:
       dockerfile: Dockerfile.multiarch
       repo: woodpeckerci/plugin-deployments
@@ -24,7 +24,7 @@ steps:
       event: push
 
   publish-tag:
-    image: woodpeckerci/plugin-docker-buildx:5.0.0
+    image: woodpeckerci/plugin-docker-buildx:5.1.0
     settings:
       dockerfile: Dockerfile.multiarch
       repo: woodpeckerci/plugin-deployments
