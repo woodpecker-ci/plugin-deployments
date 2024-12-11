@@ -7,7 +7,7 @@ require (
 	github.com/google/go-github/v65 v65.0.0
 	github.com/rs/zerolog v1.33.0
 	github.com/urfave/cli/v3 v3.0.0-beta1
-	github.com/xanzy/go-gitlab v0.114.0
+	github.com/xanzy/go-gitlab v0.115.0
 	golang.org/x/oauth2 v0.24.0
 )
 
