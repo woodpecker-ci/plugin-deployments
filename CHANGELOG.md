@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update woodpeckerci/plugin-docker-buildx Docker tag to v5.1.0 [[#65](https://github.com/woodpecker-ci/plugin-deployments/pull/65)]
 - Update module github.com/xanzy/go-gitlab to v0.115.0 [[#66](https://github.com/woodpecker-ci/plugin-deployments/pull/66)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v2.1.1 [[#61](https://github.com/woodpecker-ci/plugin-deployments/pull/61)]
 - Update pre-commit non-major [[#62](https://github.com/woodpecker-ci/plugin-deployments/pull/62)]
