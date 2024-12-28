@@ -4,7 +4,7 @@ go 1.23
 
 require (
 	codeberg.org/woodpecker-plugins/go-plugin v0.7.0
-	github.com/google/go-github/v65 v65.0.0
+	github.com/google/go-github/v68 v68.0.0
 	github.com/rs/zerolog v1.33.0
 	github.com/urfave/cli/v3 v3.0.0-beta1
 	github.com/xanzy/go-gitlab v0.115.0
