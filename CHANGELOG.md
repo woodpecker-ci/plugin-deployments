@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2024-12-11
+## [0.0.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.0.1) - 2025-01-04
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook golangci/golangci-lint to v1.63.4 [[#68](https://github.com/woodpecker-ci/plugin-deployments/pull/68)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v5.1.0 [[#65](https://github.com/woodpecker-ci/plugin-deployments/pull/65)]
 - Update module github.com/xanzy/go-gitlab to v0.115.0 [[#66](https://github.com/woodpecker-ci/plugin-deployments/pull/66)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v2.1.1 [[#61](https://github.com/woodpecker-ci/plugin-deployments/pull/61)]
