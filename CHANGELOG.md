@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.0) - 2025-01-21
+## [0.1.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.0) - 2025-01-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook igorshubovych/markdownlint-cli to v0.44.0 [[#72](https://github.com/woodpecker-ci/plugin-deployments/pull/72)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v3.1.3 [[#70](https://github.com/woodpecker-ci/plugin-deployments/pull/70)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v3 [[#64](https://github.com/woodpecker-ci/plugin-deployments/pull/64)]
 - Update pre-commit hook pre-commit/pre-commit-hooks to v5 [[#53](https://github.com/woodpecker-ci/plugin-deployments/pull/53)]
