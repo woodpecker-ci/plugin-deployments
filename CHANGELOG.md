@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook golangci/golangci-lint to v1.64.5 [[#77](https://github.com/woodpecker-ci/plugin-deployments/pull/77)]
 - Update golang Docker tag to v1.24 [[#76](https://github.com/woodpecker-ci/plugin-deployments/pull/76)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v5.2.1 [[#74](https://github.com/woodpecker-ci/plugin-deployments/pull/74)]
 - Update module codeberg.org/woodpecker-plugins/go-plugin to v0.7.1 [[#78](https://github.com/woodpecker-ci/plugin-deployments/pull/78)]
