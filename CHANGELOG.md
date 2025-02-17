@@ -12,6 +12,8 @@
 
 ### 📦️ Dependency
 
+- Update golang Docker tag to v1.24 [[#76](https://github.com/woodpecker-ci/plugin-deployments/pull/76)]
+- Update woodpeckerci/plugin-docker-buildx Docker tag to v5.2.1 [[#74](https://github.com/woodpecker-ci/plugin-deployments/pull/74)]
 - Update module codeberg.org/woodpecker-plugins/go-plugin to v0.7.1 [[#78](https://github.com/woodpecker-ci/plugin-deployments/pull/78)]
 - Update module golang.org/x/oauth2 to v0.26.0 [[#73](https://github.com/woodpecker-ci/plugin-deployments/pull/73)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v5.2.0 [[#71](https://github.com/woodpecker-ci/plugin-deployments/pull/71)]
