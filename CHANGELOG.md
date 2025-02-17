@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.0) - 2025-02-05
+## [0.1.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.0) - 2025-02-17
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module codeberg.org/woodpecker-plugins/go-plugin to v0.7.1 [[#78](https://github.com/woodpecker-ci/plugin-deployments/pull/78)]
 - Update module golang.org/x/oauth2 to v0.26.0 [[#73](https://github.com/woodpecker-ci/plugin-deployments/pull/73)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v5.2.0 [[#71](https://github.com/woodpecker-ci/plugin-deployments/pull/71)]
 - Update pre-commit hook igorshubovych/markdownlint-cli to v0.44.0 [[#72](https://github.com/woodpecker-ci/plugin-deployments/pull/72)]
