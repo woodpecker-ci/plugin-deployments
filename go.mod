@@ -1,6 +1,8 @@
 module github.com/woodpecker-ci/plugin-deployments
 
-go 1.23
+go 1.23.0
+
+toolchain go1.24.0
 
 require (
 	codeberg.org/woodpecker-plugins/go-plugin v0.7.1
@@ -8,7 +10,7 @@ require (
 	github.com/rs/zerolog v1.33.0
 	github.com/urfave/cli/v3 v3.0.0-beta1
 	github.com/xanzy/go-gitlab v0.115.0
-	golang.org/x/oauth2 v0.26.0
+	golang.org/x/oauth2 v0.27.0
 )
 
 require (
