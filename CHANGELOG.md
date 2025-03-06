@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.0) - 2025-03-05
+## [0.1.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.0) - 2025-03-06
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module golang.org/x/oauth2 to v0.28.0 [[#81](https://github.com/woodpecker-ci/plugin-deployments/pull/81)]
 - Update dependency go to v1.24.1 [[#80](https://github.com/woodpecker-ci/plugin-deployments/pull/80)]
 - Update module golang.org/x/oauth2 to v0.27.0 [[#79](https://github.com/woodpecker-ci/plugin-deployments/pull/79)]
 - Update module github.com/google/go-github/v65 to v69 [[#75](https://github.com/woodpecker-ci/plugin-deployments/pull/75)]
