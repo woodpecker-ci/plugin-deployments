@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/rs/zerolog to v1.34.0 [[#85](https://github.com/woodpecker-ci/plugin-deployments/pull/85)]
 - Update pre-commit hook golangci/golangci-lint to v1.64.8 [[#84](https://github.com/woodpecker-ci/plugin-deployments/pull/84)]
 - Update pre-commit hook golangci/golangci-lint to v1.64.7 [[#83](https://github.com/woodpecker-ci/plugin-deployments/pull/83)]
 - Update pre-commit hook golangci/golangci-lint to v1.64.6 [[#82](https://github.com/woodpecker-ci/plugin-deployments/pull/82)]
