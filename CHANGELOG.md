@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/google/go-github/v69 to v70 [[#86](https://github.com/woodpecker-ci/plugin-deployments/pull/86)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v5.2.2 [[#87](https://github.com/woodpecker-ci/plugin-deployments/pull/87)]
 - Update module github.com/rs/zerolog to v1.34.0 [[#85](https://github.com/woodpecker-ci/plugin-deployments/pull/85)]
 - Update pre-commit hook golangci/golangci-lint to v1.64.8 [[#84](https://github.com/woodpecker-ci/plugin-deployments/pull/84)]
