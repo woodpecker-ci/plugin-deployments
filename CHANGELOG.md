@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.1) - 2025-04-15
+
+### 📦️ Dependency
+
+- Update module golang.org/x/oauth2 to v0.29.0 [[#93](https://github.com/woodpecker-ci/plugin-deployments/pull/93)]
+- Update module github.com/google/go-github/v70 to v71 [[#95](https://github.com/woodpecker-ci/plugin-deployments/pull/95)]
+- Update golang deps non-major [[#92](https://github.com/woodpecker-ci/plugin-deployments/pull/92)]
+- Update module github.com/urfave/cli/v3 to v3.1.0 [[#91](https://github.com/woodpecker-ci/plugin-deployments/pull/91)]
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v3.1.4 [[#88](https://github.com/woodpecker-ci/plugin-deployments/pull/88)]
+
+### Misc
+
+- [pre-commit.ci] pre-commit autoupdate [[#94](https://github.com/woodpecker-ci/plugin-deployments/pull/94)]
+
 ## [0.1.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.0) - 2025-03-25
 
 ### ❤️ Thanks to all contributors! ❤️
