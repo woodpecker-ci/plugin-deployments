@@ -27,16 +27,29 @@ vendor:
 	go mod tidy
 	go mod vendor
 
-formatcheck:
-	@([ -z "$(shell gofmt -d $(GOFILES_NOVENDOR) | head)" ]) || (echo "Source is unformatted"; exit 1)
+format: install-tools ## Format source code
+	@gofumpt -extra -w ${GOFILES_NOVENDOR}
 
-format:
-	@gofmt -w ${GOFILES_NOVENDOR}
+formatcheck:
+	@([ -z "$(shell gofumpt -d $(GOFILES_NOVENDOR) | head)" ]) || (echo "Source is unformatted"; exit 1)
+
+install-tools: ## Install development tools
+	@hash golangci-lint > /dev/null 2>&1; if [ $$? -ne 0 ]; then \
+		go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest ; \
+	fi ; \
+	hash gofumpt > /dev/null 2>&1; if [ $$? -ne 0 ]; then \
+		go install mvdan.cc/gofumpt@latest; \
+	fi ; \
 
 .PHONY: clean
 clean:
 	go clean -i ./...
 	rm -rf release/
+
+.PHONY: lint
+lint: install-tools ## Lint code
+	@echo "Running golangci-lint"
+	golangci-lint run
 
 .PHONY: vet
 vet:

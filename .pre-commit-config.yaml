@@ -1,3 +1,4 @@
+# cSpell:ignore checkmake hadolint autofix autoupdate
 repos:
   - repo: meta
     hooks:
@@ -6,17 +7,17 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-      - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: https://github.com/golangci/golangci-lint
-    rev: v2.0.2
+    rev: v2.1.1
     hooks:
       - id: golangci-lint
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.44.0
     hooks:
       - id: markdownlint
+        exclude: '^(CHANGELOG.md)$'
   - repo: https://github.com/mrtazz/checkmake
     rev: 0.2.2
     hooks:
@@ -25,10 +26,15 @@ repos:
     rev: v2.13.1-beta
     hooks:
       - id: hadolint
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.5.3
     hooks:
       - id: prettier
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.37.0
+    hooks:
+      - id: yamllint
+        args: [--strict, -c=.yamllint.yaml]
   - repo: local
     hooks:
       - id: yaml-file-extension
@@ -47,5 +53,5 @@ ci:
   autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
   autoupdate_schedule: quarterly
   # NB: hadolint not included in pre-commit.ci
-  skip: [check-hooks-apply, check-useless-excludes, hadolint, golangci-lint]
+  skip: [check-hooks-apply, check-useless-excludes, hadolint, prettier, golangci-lint]
   submodules: false

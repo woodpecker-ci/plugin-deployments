@@ -7,7 +7,6 @@ import (
 
 	"codeberg.org/woodpecker-plugins/go-plugin"
 	"github.com/rs/zerolog/log"
-
 	"github.com/woodpecker-ci/plugin-deployments/forge"
 )
 
@@ -35,13 +34,14 @@ func (p *Plugin) execute(ctx context.Context) error {
 
 	deploymentName := p.settings.name
 	if deploymentName == "" {
-		if p.Metadata.Pipeline.Event == "pull_request" || p.Metadata.Pipeline.Event == "pull_request_closed" {
-			deploymentName = fmt.Sprintf("pr-%s", p.Metadata.Curr.PullRequest)
-		} else if p.Metadata.Pipeline.Event == "tag" {
-			deploymentName = p.Metadata.Curr.Tag
-		} else if p.Metadata.Pipeline.Event == "push" {
-			deploymentName = p.Metadata.Curr.Branch
-		} else {
+		switch p.Metadata.Pipeline.Event {
+		case "pull_request", "pull_request_closed":
+			deploymentName = fmt.Sprintf("pr-%s", p.Metadata.Commit.PullRequest)
+		case "tag":
+			deploymentName = p.Metadata.Commit.Tag
+		case "push":
+			deploymentName = p.Metadata.Commit.Branch
+		default:
 			return errors.New("please set a deployment name")
 		}
 	}
