@@ -16,11 +16,11 @@ func GetForge(forge plugin.Forge, token string) (Forge, error) {
 	switch forge.Type {
 	case "gitlab":
 		var err error
-		_forge, err := NewGitlab(forge.Link, token)
+		_forge, err := NewGitlab(forge.URL, token)
 		return _forge, err
 	case "github":
 		var err error
-		_forge, err := NewGithub(forge.Link, token)
+		_forge, err := NewGithub(forge.URL, token)
 		return _forge, err
 	default:
 		return nil, errors.New("unsupported forge type")

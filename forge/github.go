@@ -73,9 +73,9 @@ func (g *Github) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 
 	if deployment == nil {
 		deployment, _, err = g.Repositories.CreateDeployment(ctx, repo.Owner, repo.Name, &github.DeploymentRequest{
-			Ref:              github.String(metadata.Curr.Ref),
-			Environment:      github.String(name),
-			Description:      github.String("🚀 Deployment created by woodpecker"),
+			Ref:              github.Ptr(metadata.Commit.Ref),
+			Environment:      github.Ptr(name),
+			Description:      github.Ptr("🚀 Deployment created by woodpecker"),
 			RequiredContexts: &[]string{}, // empty array to skip checks
 		})
 		if err != nil {
@@ -84,11 +84,11 @@ func (g *Github) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 	}
 
 	_, _, err = g.Repositories.CreateDeploymentStatus(ctx, repo.Owner, repo.Name, *deployment.ID, &github.DeploymentStatusRequest{
-		Environment:    github.String(name),
-		EnvironmentURL: github.String(url),
-		State:          github.String("success"),
-		AutoInactive:   github.Bool(true),
-		LogURL:         github.String(metadata.Pipeline.Link),
+		Environment:    github.Ptr(name),
+		EnvironmentURL: github.Ptr(url),
+		State:          github.Ptr("success"),
+		AutoInactive:   github.Ptr(true),
+		LogURL:         github.Ptr(metadata.Pipeline.URL),
 	})
 
 	return err

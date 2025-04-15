@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"codeberg.org/woodpecker-plugins/go-plugin"
-	"github.com/xanzy/go-gitlab"
+	gitlab "gitlab.com/gitlab-org/api/client-go"
 )
 
 type Gitlab struct {
@@ -76,7 +76,7 @@ func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 		}
 	}
 
-	commit := metadata.Curr
+	commit := metadata.Commit
 	_, _, err = g.Deployments.CreateProjectDeployment(repoID, &gitlab.CreateProjectDeploymentOptions{
 		Environment: gitlab.Ptr(name),
 		Tag:         gitlab.Ptr(commit.Tag != ""),
@@ -86,7 +86,7 @@ func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 	}, gitlab.WithContext(ctx))
 
 	if metadata.Pipeline.Event == "pull_request" {
-		mergeRequestID, err := strconv.Atoi(metadata.Curr.PullRequest)
+		mergeRequestID, err := strconv.Atoi(metadata.Commit.PullRequest)
 		if err != nil {
 			return err
 		}
@@ -148,7 +148,7 @@ func (g *Gitlab) getComment(projectID, mergeRequestID int) (*gitlab.Note, error)
 	}
 
 	for {
-		notes, resp, err := g.Client.Notes.ListMergeRequestNotes(projectID, mergeRequestID, listMergeRequestNotesOptions)
+		notes, resp, err := g.Notes.ListMergeRequestNotes(projectID, mergeRequestID, listMergeRequestNotesOptions)
 		if err != nil {
 			return nil, err
 		}

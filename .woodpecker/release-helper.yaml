@@ -1,11 +1,13 @@
+when:
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+
 steps:
   release-helper:
-    image: woodpeckerci/plugin-ready-release-go:3.1.4
+    image: docker.io/woodpeckerci/plugin-ready-release-go:3.1.4
     settings:
+      release_branch: ${CI_REPO_DEFAULT_BRANCH}
+      forge_type: github
       git_email: woodpecker-bot@obermui.de
       github_token:
         from_secret: GITHUB_TOKEN
-
-when:
-  event: push
-  branch: ${CI_REPO_DEFAULT_BRANCH}
