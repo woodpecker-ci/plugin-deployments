@@ -22,7 +22,7 @@ steps:
     image: woodpeckerci/plugin-docker-buildx:5.2.2
     depends_on: [lint, test]
     settings:
-      dockerfile: Dockerfile.multiarch
+      dockerfile: Dockerfile
       dry_run: true
       repo: woodpeckerci/plugin-deployments
       tags: latest
