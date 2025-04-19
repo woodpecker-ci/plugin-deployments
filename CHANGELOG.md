@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.2) - 2025-04-19
+
+### 📦️ Dependency
+
+- Update pre-commit hook golangci/golangci-lint to v2.1.2 [[#97](https://github.com/woodpecker-ci/plugin-deployments/pull/97)]
+
 ## [0.1.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.1) - 2025-04-15
 
 ### 📦️ Dependency
