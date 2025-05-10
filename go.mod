@@ -6,7 +6,7 @@ toolchain go1.24.2
 
 require (
 	codeberg.org/woodpecker-plugins/go-plugin v0.7.1
-	github.com/google/go-github/v71 v71.0.0
+	github.com/google/go-github/v72 v72.0.0
 	github.com/rs/zerolog v1.34.0
 	github.com/urfave/cli/v3 v3.1.1
 	github.com/xanzy/go-gitlab v0.115.0
