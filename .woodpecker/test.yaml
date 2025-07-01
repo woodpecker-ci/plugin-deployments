@@ -19,7 +19,7 @@ steps:
       - make test
 
   build:
-    image: woodpeckerci/plugin-docker-buildx:5.2.2
+    image: woodpeckerci/plugin-docker-buildx:6.0.2
     depends_on: [lint, test]
     settings:
       dockerfile: Dockerfile.multiarch
