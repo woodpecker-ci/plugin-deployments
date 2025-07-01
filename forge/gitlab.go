@@ -91,21 +91,21 @@ func (g *Gitlab) CreateDeployment(ctx context.Context, repo plugin.Repository, n
 			return err
 		}
 
-		note, err := g.getComment(repoID, mergeRequestID)
+		note, err := g.getComment(repoID, mergeRequestID, name)
 		if err != nil {
 			return err
 		}
 
 		if note == nil {
 			_, _, err = g.Notes.CreateMergeRequestNote(repoID, mergeRequestID, &gitlab.CreateMergeRequestNoteOptions{
-				Body: gitlab.Ptr(fmt.Sprintf("🚀 Preview deployed to: %s", url)),
+				Body: gitlab.Ptr(fmt.Sprintf("%s %s", g.getCommentPrefix(name), url)),
 			}, gitlab.WithContext(ctx))
 			if err != nil {
 				return err
 			}
 		} else {
 			_, _, err = g.Notes.UpdateMergeRequestNote(repoID, mergeRequestID, note.ID, &gitlab.UpdateMergeRequestNoteOptions{
-				Body: gitlab.Ptr(fmt.Sprintf("🚀 Preview deployed to: %s", url)),
+				Body: gitlab.Ptr(fmt.Sprintf("%s %s", g.getCommentPrefix(name), url)),
 			}, gitlab.WithContext(ctx))
 			if err != nil {
 				return err
@@ -142,7 +142,7 @@ func (g *Gitlab) RemoveDeployment(ctx context.Context, repo plugin.Repository, n
 	return nil
 }
 
-func (g *Gitlab) getComment(projectID, mergeRequestID int) (*gitlab.Note, error) {
+func (g *Gitlab) getComment(projectID, mergeRequestID int, name string) (*gitlab.Note, error) {
 	listMergeRequestNotesOptions := &gitlab.ListMergeRequestNotesOptions{
 		Sort: gitlab.Ptr("asc"),
 	}
@@ -154,7 +154,7 @@ func (g *Gitlab) getComment(projectID, mergeRequestID int) (*gitlab.Note, error)
 		}
 
 		for _, note := range notes {
-			if strings.Contains(note.Body, "Preview deployed to:") {
+			if strings.Contains(note.Body, g.getCommentPrefix(name)) {
 				return note, nil
 			}
 		}
@@ -169,4 +169,8 @@ func (g *Gitlab) getComment(projectID, mergeRequestID int) (*gitlab.Note, error)
 	}
 
 	return nil, nil
+}
+
+func (g *Gitlab) getCommentPrefix(name string) string {
+	return fmt.Sprintf("🚀 Preview \"%s\" deployed to:", name)
 }
