@@ -4,6 +4,7 @@
 
 ### 📦️ Dependency
 
+- Update golang deps non-major [[#100](https://github.com/woodpecker-ci/plugin-deployments/pull/100)]
 - Update module codeberg.org/woodpecker-plugins/go-plugin to v1 [[#102](https://github.com/woodpecker-ci/plugin-deployments/pull/102)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v6 [[#103](https://github.com/woodpecker-ci/plugin-deployments/pull/103)]
 - Update pre-commit hook golangci/golangci-lint to v2.2.1 [[#109](https://github.com/woodpecker-ci/plugin-deployments/pull/109)]
