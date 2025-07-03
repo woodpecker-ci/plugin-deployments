@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.2.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.0) - 2025-07-03
+
+### ❤️ Thanks to all contributors! ❤️
+
+@mariusheine
+
+### ✨ Features
+
+- Support comments for multiple deployments in gitlab [[#110](https://github.com/woodpecker-ci/plugin-deployments/pull/110)]
+
+### 📦️ Dependency
+
+- Update module github.com/google/go-github/v71 to v73 [[#107](https://github.com/woodpecker-ci/plugin-deployments/pull/107)]
+- Update golang deps non-major [[#100](https://github.com/woodpecker-ci/plugin-deployments/pull/100)]
+- Update module codeberg.org/woodpecker-plugins/go-plugin to v1 [[#102](https://github.com/woodpecker-ci/plugin-deployments/pull/102)]
+- Update woodpeckerci/plugin-docker-buildx Docker tag to v6 [[#103](https://github.com/woodpecker-ci/plugin-deployments/pull/103)]
+- Update pre-commit hook golangci/golangci-lint to v2.2.1 [[#109](https://github.com/woodpecker-ci/plugin-deployments/pull/109)]
+- Update pre-commit hook golangci/golangci-lint to v2.2.0 [[#108](https://github.com/woodpecker-ci/plugin-deployments/pull/108)]
+- Update pre-commit hook igorshubovych/markdownlint-cli to v0.45.0 [[#106](https://github.com/woodpecker-ci/plugin-deployments/pull/106)]
+- Update pre-commit hook golangci/golangci-lint to v2.1.6 [[#104](https://github.com/woodpecker-ci/plugin-deployments/pull/104)]
+- Update pre-commit hook golangci/golangci-lint to v2.1.5 [[#101](https://github.com/woodpecker-ci/plugin-deployments/pull/101)]
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v3.2.0 [[#98](https://github.com/woodpecker-ci/plugin-deployments/pull/98)]
+- Update pre-commit hook golangci/golangci-lint to v2.1.2 [[#97](https://github.com/woodpecker-ci/plugin-deployments/pull/97)]
+
 ## [0.1.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.1) - 2025-04-15
 
 ### 📦️ Dependency
