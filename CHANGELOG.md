@@ -1,6 +1,14 @@
 # Changelog
 
-## [0.1.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.1.2) - 2025-07-02
+## [0.2.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.0) - 2025-07-03
+
+### ❤️ Thanks to all contributors! ❤️
+
+@mariusheine
+
+### ✨ Features
+
+- Support comments for multiple deployments in gitlab [[#110](https://github.com/woodpecker-ci/plugin-deployments/pull/110)]
 
 ### 📦️ Dependency
 
