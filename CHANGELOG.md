@@ -1,9 +1,10 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-07-05
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-07-09
 
 ### 📦️ Dependency
 
+- Update dependency go to v1.24.5 [[#113](https://github.com/woodpecker-ci/plugin-deployments/pull/113)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v3.3.0 [[#111](https://github.com/woodpecker-ci/plugin-deployments/pull/111)]
 
 ## [0.2.0](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.0) - 2025-07-03
