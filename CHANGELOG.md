@@ -1,6 +1,14 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-07-26
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-08-01
+
+### ❤️ Thanks to all contributors! ❤️
+
+@arthurcogo
+
+### 📚 Documentation
+
+- Update docs.md [[#117](https://github.com/woodpecker-ci/plugin-deployments/pull/117)]
 
 ### 📦️ Dependency
 
