@@ -10,7 +10,7 @@ url: https://github.com/woodpecker-ci/plugin-deployments
 
 # plugin-deployments
 
-The extend env plugin extends an existing or creates a new `.env` file with additional variables like semver information.
+The deployments plugin allows you to update deployment entires in your forge. You can use it for example after deploying a review environment to publish the review environments url to your forge.
 
 The below pipeline configuration demonstrates simple usage:
 
@@ -30,6 +30,6 @@ steps:
 | Settings      | Default                                                                       | Description                         |
 | ------------- | ----------------------------------------------------------------------------- | ----------------------------------- |
 | `ACTION`      | `create` for all pipeline events apart from `pull_request_closed` => `delete` | `create` or `delete` a deployment   |
-| `NAME`        | pull-requests: `pr-{pr-number}`, tag: `{tag-name}`, push: `{branch}           | The name of your deployment         |
+| `NAME`        | pull-requests: `pr-{pr-number}`, tag: `{tag-name}`, push: `{branch}`          | The name of your deployment         |
 | `URL`         | _none_                                                                        | The url to the deployed environment |
 | `FORGE_TOKEN` | _none_                                                                        | A token to access the forges api    |
