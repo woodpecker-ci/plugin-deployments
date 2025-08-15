@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-08-13
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-08-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook pre-commit/pre-commit-hooks to v6 [[#121](https://github.com/woodpecker-ci/plugin-deployments/pull/121)]
 - Update golang deps non-major [[#122](https://github.com/woodpecker-ci/plugin-deployments/pull/122)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v3.4.0 [[#120](https://github.com/woodpecker-ci/plugin-deployments/pull/120)]
 - Update dependency go to v1.24.6 [[#119](https://github.com/woodpecker-ci/plugin-deployments/pull/119)]
