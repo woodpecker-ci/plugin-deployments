@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/google/go-github/v73 to v74 [[#123](https://github.com/woodpecker-ci/plugin-deployments/pull/123)]
 - Update pre-commit hook pre-commit/pre-commit-hooks to v6 [[#121](https://github.com/woodpecker-ci/plugin-deployments/pull/121)]
 - Update golang deps non-major [[#122](https://github.com/woodpecker-ci/plugin-deployments/pull/122)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v3.4.0 [[#120](https://github.com/woodpecker-ci/plugin-deployments/pull/120)]
