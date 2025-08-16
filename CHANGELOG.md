@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-08-15
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-08-16
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,8 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook golangci/golangci-lint to v2.4.0 [[#125](https://github.com/woodpecker-ci/plugin-deployments/pull/125)]
+- Update golang Docker tag to v1.25 [[#124](https://github.com/woodpecker-ci/plugin-deployments/pull/124)]
 - Update module github.com/google/go-github/v73 to v74 [[#123](https://github.com/woodpecker-ci/plugin-deployments/pull/123)]
 - Update pre-commit hook pre-commit/pre-commit-hooks to v6 [[#121](https://github.com/woodpecker-ci/plugin-deployments/pull/121)]
 - Update golang deps non-major [[#122](https://github.com/woodpecker-ci/plugin-deployments/pull/122)]
