@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-09-27
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-10-01
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module codeberg.org/woodpecker-plugins/go-plugin to v1.0.1 [[#130](https://github.com/woodpecker-ci/plugin-deployments/pull/130)]
 - Update pre-commit hook hadolint/hadolint to v2.14.0 [[#128](https://github.com/woodpecker-ci/plugin-deployments/pull/128)]
 - Update pre-commit hook golangci/golangci-lint to v2.5.0 [[#127](https://github.com/woodpecker-ci/plugin-deployments/pull/127)]
 - Update golang deps non-major [[#126](https://github.com/woodpecker-ci/plugin-deployments/pull/126)]
