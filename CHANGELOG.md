@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-10-09
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-10-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update dependency go to v1.25.3 [[#133](https://github.com/woodpecker-ci/plugin-deployments/pull/133)]
 - Update golang deps non-major [[#132](https://github.com/woodpecker-ci/plugin-deployments/pull/132)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v6.0.3 [[#131](https://github.com/woodpecker-ci/plugin-deployments/pull/131)]
 - Update module codeberg.org/woodpecker-plugins/go-plugin to v1.0.1 [[#130](https://github.com/woodpecker-ci/plugin-deployments/pull/130)]
