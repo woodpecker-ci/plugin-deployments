@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/urfave/cli/v3 to v3.6.0 [[#142](https://github.com/woodpecker-ci/plugin-deployments/pull/142)]
 - Update pre-commit hook golangci/golangci-lint to v2.6.2 [[#143](https://github.com/woodpecker-ci/plugin-deployments/pull/143)]
 - Update module golang.org/x/oauth2 to v0.33.0 [[#141](https://github.com/woodpecker-ci/plugin-deployments/pull/141)]
 - Update pre-commit hook golangci/golangci-lint to v2.6.1 [[#138](https://github.com/woodpecker-ci/plugin-deployments/pull/138)]
