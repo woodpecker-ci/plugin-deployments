@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-11-09
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-11-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook golangci/golangci-lint to v2.6.2 [[#143](https://github.com/woodpecker-ci/plugin-deployments/pull/143)]
 - Update module golang.org/x/oauth2 to v0.33.0 [[#141](https://github.com/woodpecker-ci/plugin-deployments/pull/141)]
 - Update pre-commit hook golangci/golangci-lint to v2.6.1 [[#138](https://github.com/woodpecker-ci/plugin-deployments/pull/138)]
 - Update dependency go to v1.25.4 [[#137](https://github.com/woodpecker-ci/plugin-deployments/pull/137)]
