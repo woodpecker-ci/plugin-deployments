@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-11-22
+## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2025-12-03
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update dependency go to v1.25.5 [[#147](https://github.com/woodpecker-ci/plugin-deployments/pull/147)]
 - Update pre-commit hook igorshubovych/markdownlint-cli to v0.46.0 [[#146](https://github.com/woodpecker-ci/plugin-deployments/pull/146)]
 - Update module github.com/urfave/cli/v3 to v3.6.1 [[#145](https://github.com/woodpecker-ci/plugin-deployments/pull/145)]
 - Update module github.com/urfave/cli/v3 to v3.6.0 [[#142](https://github.com/woodpecker-ci/plugin-deployments/pull/142)]
