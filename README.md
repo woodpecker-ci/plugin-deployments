@@ -24,8 +24,8 @@ The deployments plugin allows you to update deployment entires in your forge. Yo
 
 ```yml
 steps:
-  add-deployment:
-    image: woodpeckerci/plugin-deployments
+  - name: add-deployment
+    image: docker.io/woodpeckerci/plugin-deployments
     settings:
       url: https://may-review-environment.example.com
       # action: create # This option is normally not necessary as its auto-detected by the pipeline event
