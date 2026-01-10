@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update woodpeckerci/plugin-docker-buildx Docker tag to v6.0.4 [[#157](https://github.com/woodpecker-ci/plugin-deployments/pull/157)]
 - Update module github.com/google/go-github/v74 to v81 [[#155](https://github.com/woodpecker-ci/plugin-deployments/pull/155)]
 - Update pre-commit non-major [[#154](https://github.com/woodpecker-ci/plugin-deployments/pull/154)]
 - Update module codeberg.org/woodpecker-plugins/go-plugin to v1.0.2 [[#153](https://github.com/woodpecker-ci/plugin-deployments/pull/153)]
