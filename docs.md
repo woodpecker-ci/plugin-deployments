@@ -1,5 +1,5 @@
 ---
-name: Deployments plugin
+name: Deployments
 author: Woodpecker Authors
 description: Update deployments in your forge
 tags: [env, semver]
@@ -8,15 +8,13 @@ containerImageUrl: https://hub.docker.com/r/woodpeckerci/plugin-deployments
 url: https://github.com/woodpecker-ci/plugin-deployments
 ---
 
-# plugin-deployments
-
 The deployments plugin allows you to update deployment entires in your forge. You can use it for example after deploying a review environment to publish the review environments url to your forge.
 
 The below pipeline configuration demonstrates simple usage:
 
 ```yml
 steps:
-  extend-env:
+  - name: extend-env
     image: woodpeckerci/plugin-deployments
     settings:
       url: https://may-review-environment.example.com
