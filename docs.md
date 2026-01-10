@@ -7,6 +7,7 @@ containerImage: woodpeckerci/plugin-deployments
 containerImageUrl: https://hub.docker.com/r/woodpeckerci/plugin-deployments
 url: https://github.com/woodpecker-ci/plugin-deployments
 ---
+
 <!-- markdownlint-disable MD041 -->
 
 The deployments plugin allows you to update deployment entires in your forge. You can use it for example after deploying a review environment to publish the review environments url to your forge.
