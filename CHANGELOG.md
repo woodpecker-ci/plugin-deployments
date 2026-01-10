@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook mrtazz/checkmake to v0.3.2 [[#160](https://github.com/woodpecker-ci/plugin-deployments/pull/160)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v3.4.1 [[#158](https://github.com/woodpecker-ci/plugin-deployments/pull/158)]
 
 ## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2026-01-10
