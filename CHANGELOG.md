@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-01-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@6543
+
+### 📚 Documentation
+
+- Remove 'plugin' from plugin name in docs.md [[#156](https://github.com/woodpecker-ci/plugin-deployments/pull/156)]
+
+### 📦️ Dependency
+
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v3.4.1 [[#158](https://github.com/woodpecker-ci/plugin-deployments/pull/158)]
+
 ## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2026-01-10
 
 ### ❤️ Thanks to all contributors! ❤️
