@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook golangci/golangci-lint to v2.9.0 [[#168](https://github.com/woodpecker-ci/plugin-deployments/pull/168)]
 - Update golang Docker tag to v1.26 [[#167](https://github.com/woodpecker-ci/plugin-deployments/pull/167)]
 - Update dependency go to v1.26.0 [[#166](https://github.com/woodpecker-ci/plugin-deployments/pull/166)]
 - Update module golang.org/x/oauth2 to v0.35.0 [[#165](https://github.com/woodpecker-ci/plugin-deployments/pull/165)]
