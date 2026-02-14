@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-02-11
+## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-02-14
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update golang Docker tag to v1.26 [[#167](https://github.com/woodpecker-ci/plugin-deployments/pull/167)]
 - Update dependency go to v1.26.0 [[#166](https://github.com/woodpecker-ci/plugin-deployments/pull/166)]
 - Update module golang.org/x/oauth2 to v0.35.0 [[#165](https://github.com/woodpecker-ci/plugin-deployments/pull/165)]
 - Update dependency go to v1.25.7 [[#164](https://github.com/woodpecker-ci/plugin-deployments/pull/164)]
