@@ -5,7 +5,7 @@ go 1.25.0
 toolchain go1.26.1
 
 require (
-	codeberg.org/woodpecker-plugins/go-plugin v1.0.2
+	codeberg.org/woodpecker-plugins/go-plugin v1.0.3
 	github.com/google/go-github/v81 v81.0.0
 	github.com/rs/zerolog v1.34.0
 	github.com/urfave/cli/v3 v3.7.0
@@ -20,7 +20,7 @@ require (
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	golang.org/x/net v0.48.0 // indirect
-	golang.org/x/sys v0.39.0 // indirect
+	golang.org/x/net v0.51.0 // indirect
+	golang.org/x/sys v0.41.0 // indirect
 	golang.org/x/time v0.6.0 // indirect
 )
