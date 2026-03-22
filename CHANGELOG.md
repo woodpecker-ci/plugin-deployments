@@ -1,5 +1,36 @@
 # Changelog
 
+## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-03-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@6543
+
+### 📚 Documentation
+
+- Remove 'plugin' from plugin name in docs.md [[#156](https://github.com/woodpecker-ci/plugin-deployments/pull/156)]
+
+### 📦️ Dependency
+
+- Update pre-commit hook golangci/golangci-lint to v2.11.4 [[#180](https://github.com/woodpecker-ci/plugin-deployments/pull/180)]
+- Update pre-commit hook golangci/golangci-lint to v2.11.3 [[#179](https://github.com/woodpecker-ci/plugin-deployments/pull/179)]
+- Update module codeberg.org/woodpecker-plugins/go-plugin to v1.0.3 [[#178](https://github.com/woodpecker-ci/plugin-deployments/pull/178)]
+- Update module golang.org/x/oauth2 to v0.36.0 [[#177](https://github.com/woodpecker-ci/plugin-deployments/pull/177)]
+- Update pre-commit hook golangci/golangci-lint to v2.11.2 [[#176](https://github.com/woodpecker-ci/plugin-deployments/pull/176)]
+- Update pre-commit non-major [[#175](https://github.com/woodpecker-ci/plugin-deployments/pull/175)]
+- Update dependency go to v1.26.1 [[#174](https://github.com/woodpecker-ci/plugin-deployments/pull/174)]
+- Update module github.com/urfave/cli/v3 to v3.7.0 [[#173](https://github.com/woodpecker-ci/plugin-deployments/pull/173)]
+- Update pre-commit hook golangci/golangci-lint to v2.10.1 [[#169](https://github.com/woodpecker-ci/plugin-deployments/pull/169)]
+- Update pre-commit hook golangci/golangci-lint to v2.9.0 [[#168](https://github.com/woodpecker-ci/plugin-deployments/pull/168)]
+- Update golang Docker tag to v1.26 [[#167](https://github.com/woodpecker-ci/plugin-deployments/pull/167)]
+- Update dependency go to v1.26.0 [[#166](https://github.com/woodpecker-ci/plugin-deployments/pull/166)]
+- Update module golang.org/x/oauth2 to v0.35.0 [[#165](https://github.com/woodpecker-ci/plugin-deployments/pull/165)]
+- Update dependency go to v1.25.7 [[#164](https://github.com/woodpecker-ci/plugin-deployments/pull/164)]
+- Update module github.com/urfave/cli/v3 to v3.6.2 [[#162](https://github.com/woodpecker-ci/plugin-deployments/pull/162)]
+- Update dependency go to v1.25.6 [[#161](https://github.com/woodpecker-ci/plugin-deployments/pull/161)]
+- Update pre-commit hook mrtazz/checkmake to v0.3.2 [[#160](https://github.com/woodpecker-ci/plugin-deployments/pull/160)]
+- Update woodpeckerci/plugin-ready-release-go Docker tag to v3.4.1 [[#158](https://github.com/woodpecker-ci/plugin-deployments/pull/158)]
+
 ## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2026-01-10
 
 ### ❤️ Thanks to all contributors! ❤️
