@@ -6,7 +6,7 @@ toolchain go1.26.1
 
 require (
 	codeberg.org/woodpecker-plugins/go-plugin v1.1.0
-	github.com/google/go-github/v81 v81.0.0
+	github.com/google/go-github/v84 v84.0.0
 	github.com/rs/zerolog v1.35.0
 	github.com/urfave/cli/v3 v3.8.0
 	github.com/xanzy/go-gitlab v0.115.0
@@ -14,7 +14,7 @@ require (
 )
 
 require (
-	github.com/google/go-querystring v1.1.0 // indirect
+	github.com/google/go-querystring v1.2.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-retryablehttp v0.7.7 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
