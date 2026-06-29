@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-06-20
+## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-06-29
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/urfave/cli/v3 to v3.10.1 [[#198](https://github.com/woodpecker-ci/plugin-deployments/pull/198)]
 - Update pre-commit non-major to v0.49.0 [[#197](https://github.com/woodpecker-ci/plugin-deployments/pull/197)]
 - Update golang deps non-major to v3.10.0 [[#196](https://github.com/woodpecker-ci/plugin-deployments/pull/196)]
 - Update golang deps non-major to v3.9.1 [[#195](https://github.com/woodpecker-ci/plugin-deployments/pull/195)]
