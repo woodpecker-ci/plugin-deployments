@@ -1,10 +1,10 @@
 # Changelog
 
-## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-06-29
+## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-07-07
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@6543
+@6543, @btriller
 
 ### 📚 Documentation
 
@@ -44,6 +44,10 @@
 - Update dependency go to v1.25.6 [[#161](https://github.com/woodpecker-ci/plugin-deployments/pull/161)]
 - Update pre-commit hook mrtazz/checkmake to v0.3.2 [[#160](https://github.com/woodpecker-ci/plugin-deployments/pull/160)]
 - Update woodpeckerci/plugin-ready-release-go Docker tag to v3.4.1 [[#158](https://github.com/woodpecker-ci/plugin-deployments/pull/158)]
+
+### Misc
+
+- Update README.md [[#199](https://github.com/woodpecker-ci/plugin-deployments/pull/199)]
 
 ## [0.2.1](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.1) - 2026-01-10
 
