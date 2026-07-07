@@ -18,7 +18,7 @@
   </a>
 </p>
 
-The deployments plugin allows you to update deployment entires in your forge. You can use it for example after deploying a review environment to publish the review environments url to your forge.
+The deployments plugin allows you to update deployment entries in your forge. You can use it for example after deploying a review environment to publish the review environments url to your forge.
 
 ## Usage
 
