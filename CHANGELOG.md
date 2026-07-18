@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-07-11
+## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-07-18
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update pre-commit hook igorshubovych/markdownlint-cli to v0.49.1 [[#203](https://github.com/woodpecker-ci/plugin-deployments/pull/203)]
 - Update woodpeckerci/plugin-docker-buildx Docker tag to v6.1.1 [[#201](https://github.com/woodpecker-ci/plugin-deployments/pull/201)]
 - Update go toolchain directive to v1.26.5 [[#200](https://github.com/woodpecker-ci/plugin-deployments/pull/200)]
 - Update module github.com/urfave/cli/v3 to v3.10.1 [[#198](https://github.com/woodpecker-ci/plugin-deployments/pull/198)]
