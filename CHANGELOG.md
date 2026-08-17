@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-08-14
+## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-08-17
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- Update module github.com/urfave/cli/v3 to v3.11.0 [[#207](https://github.com/woodpecker-ci/plugin-deployments/pull/207)]
 - Update go toolchain directive to v1.26.6 [[#206](https://github.com/woodpecker-ci/plugin-deployments/pull/206)]
 - Update pre-commit hook hadolint/hadolint to v2.15.1 [[#204](https://github.com/woodpecker-ci/plugin-deployments/pull/204)]
 - Update pre-commit hook igorshubovych/markdownlint-cli to v0.49.1 [[#203](https://github.com/woodpecker-ci/plugin-deployments/pull/203)]
