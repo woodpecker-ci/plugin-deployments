@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.3](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.3) - 2026-10-03
+
+### 📦️ Dependency
+
+- Update module github.com/urfave/cli/v3 to v3.14.0 [[#221](https://github.com/woodpecker-ci/plugin-deployments/pull/221)]
+
 ## [0.2.2](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.2) - 2026-09-26
 
 ### ❤️ Thanks to all contributors! ❤️
