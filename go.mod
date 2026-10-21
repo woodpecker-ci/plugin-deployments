@@ -2,7 +2,7 @@ module github.com/woodpecker-ci/plugin-deployments
 
 go 1.26.0
 
-toolchain go1.27.2
+toolchain go1.27.3
 
 require (
 	codeberg.org/woodpecker-plugins/go-plugin v1.3.0
