@@ -1,9 +1,10 @@
 # Changelog
 
-## [0.2.3](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.3) - 2026-10-21
+## [0.2.3](https://github.com/woodpecker-ci/plugin-deployments/releases/tag/0.2.3) - 2026-10-25
 
 ### 📦️ Dependency
 
+- Update pre-commit hook igorshubovych/markdownlint-cli to v0.50.0 [[#227](https://github.com/woodpecker-ci/plugin-deployments/pull/227)]
 - Update go toolchain directive to v1.27.3 [[#226](https://github.com/woodpecker-ci/plugin-deployments/pull/226)]
 - Update pre-commit hook golangci/golangci-lint to v2.15.0 [[#224](https://github.com/woodpecker-ci/plugin-deployments/pull/224)]
 - Update golang deps non-major [[#223](https://github.com/woodpecker-ci/plugin-deployments/pull/223)]
